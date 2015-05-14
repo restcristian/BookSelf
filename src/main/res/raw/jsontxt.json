@@ -1,0 +1,20 @@
+"[
+        {
+                "BookId":1,
+                "ISBN13":"9780062315007",
+                "ISBN10":"0062315005",
+                "Title":"The Alchemist",
+                "Cover":"",
+                "Author":{"firstName":"Paulo","lastName":"Coelho"},
+            "Category":"Fiction"
+        },
+        {
+            "BookId":2,
+                "ISBN13":"9780393240184",
+                "ISBN10":"0393240185",
+                "Title":"Between You and Me",
+                "Cover":"http://books.google.com/books/content?id=yKKkoAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                "Author":{"firstName":"Mary","lastName":"Norris"},
+            "Category":"Language Arts & Disciplines"
+        }
+        ]";
