@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo_medium"/>
+
+    <ImageButton
+        android:id="@+id/addBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconaddbook64"
+        android:layout_toRightOf="@id/logo"
+        android:layout_marginLeft="86dp"/>
+
+    <ImageButton
+        android:id="@+id/scanBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconscanbook64"
+        android:layout_toRightOf="@id/addBook"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+        android:id="@+id/addBookshelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconaddbookshelf64"
+        android:layout_toRightOf="@id/scanBook"
+        android:layout_marginLeft="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/colorBar"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/colorbar_portrait"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>

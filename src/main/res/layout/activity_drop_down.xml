@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.cristianrestituyo.mycameratest.DropDownActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIONS"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        />
+    <!--
+    <Button
+        android:id="@+id/EditListbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit List"
+
+        />
+
+    <Button
+        android:id="@+id/DeleteListbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete List"
+        android:layout_below="@id/EditListbtn"
+        />
+    <Button
+        android:id="@+id/DoNothingListbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do Nothing"
+        android:layout_below="@id/DeleteListbtn"
+        />
+        -->
+
+</RelativeLayout>

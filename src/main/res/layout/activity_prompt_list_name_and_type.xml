@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/bookshelfaddimg"
+        />
+
+    <TextView
+        android:id="@+id/PromptNewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type Your name for your list : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/newListNameDialogUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="13"
+        />
+
+    <TextView
+        android:id="@+id/PromptNewListType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check if Wishlist : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/whishListCheck"
+        />
+
+        <requestFocus />
+
+
+</LinearLayout>

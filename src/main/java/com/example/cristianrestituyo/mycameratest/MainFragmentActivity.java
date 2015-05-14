@@ -1,26 +1,52 @@
 package com.example.cristianrestituyo.mycameratest;
 
 //import android.support.v4.app.FragmentActivity;
+import android.os.StrictMode;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.app.*;
+import android.widget.Toast;
+
+import datamodel.Books;
+import datamodel.Users;
 
 
 public class MainFragmentActivity extends FragmentActivity {
+
+    public static Users user;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_fragment);
+        /*********************NETWORK THREADS PERMISSION POLICY FORCE*************************/
 
-        MyPageAdapter adapter = new MyPageAdapter(getSupportFragmentManager());
+        if (android.os.Build.VERSION.SDK_INT > 9)
+        {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
+        /***********************************************************************************/
+
+        /******************GETTING THE WHOLE USER INSTANCE FROM THE LOGIN ACTIVITY***************/
+
+        user = (Users)getIntent().getSerializableExtra("USER_INSTANCE");
+
+
+        Toast.makeText(getApplicationContext(), "Welcome " + user.getFirstName(), Toast.LENGTH_LONG).show();
+
+
+        /**************************************************************************************/
+       /* MyPageAdapter adapter = new MyPageAdapter(getSupportFragmentManager());
         ViewPager myPager = (ViewPager) findViewById(R.id.Mypanelpager);
         myPager.setAdapter(adapter);
-        myPager.setCurrentItem(0);
+        myPager.setCurrentItem(0);*/
     }
+
 
 
     @Override
