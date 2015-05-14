@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">My Camera Test</string>
+    <string name="app_name">BookSelf</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_prompt_isbn">promptISBN</string>
     <string name="title_activity_main_fragment">MainFragmentActivity</string>
     <string name="title_activity_list_view">ListViewActivity</string>
     <string name="title_activity_list_item">ListItemActivity</string>
+    <string name="title_activity_book_description">bookDescriptionActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
 
+    <string name="search_label">bookSelf</string>
+    <string name="search_hint">Search in your bookSelf</string>
+    <string name="menu_search">Search</string>
+    <string name="settings_description">Books or bookSelfs</string>
+    <string name="search_instructions">Use the search box in the Action Bar to look up a book or bookSelf</string>
+    <string name="user_name">Username</string>
+    <string name="pass_word">Password</string>
+    <string name="welcome">Welcome To Book Self</string>
+    <string name="sign_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="chance">Chances until logout:</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_sign__up">Sign_Up</string>
+    <string name="fName">First Name</string>
+    <string name="lName">Last Name</string>
+    <string name="email">E-mail</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="Join_Today">Join Today</string>
+    <string name="Welcome">Welcome to</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_prompt_list_name_and_type">promptListNameAndType</string>
+    <string name="title_activity_book_list_item">BookListItem</string>
+    <string name="title_activity_areyou_sure">AreyouSureActivity</string>
+    <string name="title_activity_books_inside_list_view">BooksInsideListView</string>
+    <string name="title_activity_main_empty">MainEmpty</string>
+    <string name="title_activity_bookshelf_list">bookshelfList</string>
+    <string name="title_activity_add_isbn">Add ISBN</string>
+    <string name="title_activity_drop_down">DropDownActivity</string>
+    <string name="title_activity_splash__screen">Splash_Screen</string>
 </resources>

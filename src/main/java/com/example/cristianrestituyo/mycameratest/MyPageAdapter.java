@@ -9,6 +9,7 @@ import wreckingball.bookself.booklist.ListViewActivity;
 /**
  * Created by CristianRestituyo on 3/25/2015.
  */
+/*
 public class MyPageAdapter extends FragmentPagerAdapter {
 
     public int getCount() {
@@ -19,6 +20,7 @@ public class MyPageAdapter extends FragmentPagerAdapter {
     {
         super(fm);
     }
+
     @Override
     public Fragment getItem(int position)
     {
@@ -78,4 +80,4 @@ public class MyPageAdapter extends FragmentPagerAdapter {
         return null;
     }
     */
-}
+//}

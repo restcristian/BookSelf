@@ -5,20 +5,19 @@ package datamodel;
  */
 public class Reviews {
 
-    private int userId;
+    private Users user;
     private String Description;
-    private int BookId;
     private int reviewId;
     private String reviewDate;
 
-    public void setUserId(int user)
+    public void setUserId(Users u)
     {
-        userId = user;
+        user = u;
     }
 
-    public int getUserId()
+    public Users getUserId()
     {
-        return userId;
+        return user;
     }
 
     public void setDescription(String desc)
@@ -29,16 +28,6 @@ public class Reviews {
     public String getDescription()
     {
         return Description;
-    }
-
-    public void setBookId(int b)
-    {
-        BookId = b;
-    }
-
-    public int getBookId()
-    {
-        return BookId;
     }
 
     public void setReviewId(int id)

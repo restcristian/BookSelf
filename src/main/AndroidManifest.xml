@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.cristianrestituyo.mycameratest" >
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature android:name="android.hardware.camera" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ic_launcher1"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
-
         </activity>
         <activity
             android:name="com.dm.zbar.android.scanner.ZBarScannerActivity"
@@ -24,23 +26,76 @@
             android:name=".promptISBN"
             android:label="@string/title_activity_prompt_isbn" >
         </activity>
+
+        <!--
         <activity
-            android:name=".MainFragmentActivity"
-            android:label="@string/title_activity_main_fragment" >
+            android:name="wreckingball.bookself.booklist.ListViewActivity"
+            android:label="@string/title_activity_list_view" >
+        </activity>
+        -->
+        <activity
+            android:name="wreckingball.bookself.booklist.ListItemActivity"
+            android:label="@string/title_activity_list_item" >
+        </activity>
+        <activity
+            android:name="wreckingball.bookself.bookDescriptionActivity"
+            android:label="@string/title_activity_book_description"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="wreckingball.bookself.booklist.ListViewActivity"
+            android:label="ListViewActivity" >
+        </activity>
+        <activity
+            android:name="wreckingball.bookself.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name="wreckingball.bookself.SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".promptListNameAndType"
+            android:label="@string/title_activity_prompt_list_name_and_type" >
+        </activity>
+        <activity
+            android:name="wreckingball.bookself.booklist.BookListItem"
+            android:label="@string/title_activity_book_list_item" >
+        </activity>
+        <activity
+            android:name="wreckingball.bookself.AreyouSureActivity"
+            android:label="@string/title_activity_areyou_sure" >
+        </activity>
+        <activity
+            android:name="wreckingball.bookself.BooksInsideListView"
+            android:label="@string/title_activity_books_inside_list_view" >
+        </activity>
+        <activity
+            android:name="com.actvities.linkedactivities.bookshelfList"
+            android:label="@string/title_activity_bookshelf_list" >
+        </activity>
+        <activity
+            android:name="com.actvities.linkedactivities.addISBNActivity"
+            android:label="@string/title_activity_add_isbn" >
+        </activity>
+        <activity
+            android:name=".DropDownActivity"
+            android:label="@string/title_activity_drop_down" >
+        </activity>
+        <activity
+            android:name=".Splash_Screen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>
-        <activity
-            android:name="wreckingball.bookself.booklist.ListViewActivity"
-            android:label="@string/title_activity_list_view" >
-        </activity>
-        <activity
-            android:name="wreckingball.bookself.booklist.ListItemActivity"
-            android:label="@string/title_activity_list_item" >
         </activity>
     </application>
 

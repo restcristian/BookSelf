@@ -1,18 +1,54 @@
 package datamodel;
 
+import android.graphics.Bitmap;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.Serializable;
+import java.util.List;
+
+
 /**
  * Created by Randy on 3/4/2015.
  */
-public class Books {
+public class Books implements Serializable{
 
 
-    private int BookID;
+    private int BookId;
     private String ISBN10;
     private String ISBN13;
-    private String title;
-    private String AuthorName;
-    private int AuthorID;
-    private String ImgURI;
+    private String Title;
+    private List<Authors> author;
+    private String Description;
+    private String Cover;
+    private String Category;
+    private List<Reviews> reviews;
+
+    public List<Reviews> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<Reviews> reviews) {
+        this.reviews = reviews;
+    }
+
+    private byte[] coverImage; //Actual Image stored in its own member
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+    public byte[] getCoverImage() {
+        return coverImage;
+    }
+
+    public void setCoverImage(byte[] coverImage) {
+        this.coverImage = coverImage;
+    }
 
     public String getCategory() {
         return Category;
@@ -22,25 +58,25 @@ public class Books {
         Category = category;
     }
 
-    private String Category;
+    public List<Authors> getAuthors() {
+        return author;
+    }
+
+
+    public void setAuthors(List<Authors> authors) {
+        this.author = authors;
+    }
+
 
     public int getBookID()
     {
-        return BookID;
+        return BookId;
     }
     public void setID(int d)
     {
-        BookID = d;
-    }
-    public int getAuthorID()
-    {
-        return AuthorID;
+        BookId = d;
     }
 
-    public void setAuthorID(int i)
-    {
-        AuthorID = i;
-    }
 
     public String getISBN10() {
         return ISBN10;
@@ -62,32 +98,30 @@ public class Books {
 
     public String getTitle()
     {
-        return title;
+        return Title;
     }
 
     public void setTitle(String t)
     {
-        title = t;
+        Title = t;
     }
 
-    public String getAuthor()
+
+    public String getCover()
     {
-        return AuthorName;
+        return Cover;
     }
 
-    public void setAuthor(String author)
+    public void setCover(String img)
     {
-        AuthorName = author;
+        Cover = img;
     }
 
-    public String getImg()
-    {
-        return ImgURI;
+    public static Books Parse(String json){
+        Books bl;
+        Gson gson = new Gson();
+        TypeToken<Books> type = new TypeToken<Books>() {};
+        bl = gson.fromJson(json,type.getType());
+        return bl;
     }
-
-    public void setImg(String img)
-    {
-        ImgURI = img;
-    }
-
 }

@@ -6,8 +6,9 @@ package datamodel;
 public class Authors {
 
     private int AuthorId;
-    private String AuthorFName;
-    private String AuthorLName;
+    private String firstName;
+    private String lastName;
+
 
     public void setAuthorId(int id)
     {
@@ -21,21 +22,21 @@ public class Authors {
 
     public void setAuthorFName(String fname)
     {
-        AuthorFName = fname;
+        firstName = fname;
     }
 
     public String getAuthorFName()
     {
-        return AuthorFName;
+        return firstName;
     }
 
     public void setAuthorLName(String lName)
     {
-        AuthorLName = lName;
+        lastName = lName;
     }
 
     public String getAuthorLName()
     {
-        return AuthorLName;
+        return lastName;
     }
 }
